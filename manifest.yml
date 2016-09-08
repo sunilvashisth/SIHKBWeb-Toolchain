@@ -1,0 +1,13 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 1024M
+  instances: 1
+  domain: mybluemix.net
+  name: SIHKBWeb
+  host: sihkbweb
+  disk_quota: 1024M
+  services:
+  - sihkb-mas
+  - sihkb-push
+  - sihkb-db
+  - sihkb-sso
